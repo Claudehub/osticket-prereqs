@@ -39,7 +39,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   2.
   
   3.
-  
+
+5.
 </p>
 <br />
 
