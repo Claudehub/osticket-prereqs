@@ -27,6 +27,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - M++
 - database file
 - include files
+- HeidiSQL
+- rewrite
+- mysql
+- vc_redist
 
 <h2>Installation Step-by-Step Guide</h2>
 
