@@ -28,17 +28,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - database file
 - include files
 
-<h2>Installation Steps</h2>
+<h2>Installation Step-by-Step Guide</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 1.
-2.
-3.
-4.
-5.
+  2.
+  3.
+  
 </p>
 <br />
 
