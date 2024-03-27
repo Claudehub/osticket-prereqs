@@ -61,7 +61,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - In the dialog box, navigate to:
      - World Wide Web Services -> Application Development Features
    - Check the boxes for:
-     - [X] CGIWorld Wide Web Services -> Application Development Features
+     - [X] CGI
 
      - [X] Common HTTP Features
    - Make sure all Common HTTP Features are checked.
