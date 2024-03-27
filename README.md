@@ -33,27 +33,89 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osTicket v1.15.8
 
 <h2>Installation Step-by-Step Guide</h2>
-**Step-by-Step Guide to Creating and Connecting to a Virtual Machine in Azure**
-
-1. **Create a Virtual Machine:**
-   - Open your web browser and navigate to [https://portal.azure.com/](https://portal.azure.com/).
-   - Sign in to your Azure account.
-   - In the Azure portal, click on "Virtual machines" in the left-hand menu.
-   - Select "Add" to create a new virtual machine.
-   - Choose your desired configuration:
-     - Select "Windows 10 Pro" as the operating system.
-     - Choose version "22H2" from the available options.
-     - Specify the desired number of virtual CPUs (at least 2).
-     - Set the memory to a minimum of 16 GB.
+1. **Create a Virtual Machine on Azure:**
+   - Go to https://portal.azure.com/.
+   - Sign in with your Azure account credentials.
+   - Navigate to the Azure dashboard and locate the "Virtual Machines" option.
+   - Click on "Add" to create a new virtual machine.
+   - Select "Windows 10 Pro" as the operating system.
+   - Choose version 22H2.
+   - Configure the virtual machine with the following specifications:
+     - At least 2 vCPUs.
+     - 16 GBs of memory (RAM).
    - Follow the on-screen instructions to complete the virtual machine setup.
 
 2. **Connect to the Virtual Machine:**
-   - Once the virtual machine is created, locate its public IP address in the Azure portal.
-   - Open the "Remote Desktop Connection" app on your local machine. (You can usually find this by searching in the Start menu on Windows or using Spotlight on macOS.)
-   - In the Remote Desktop Connection app, enter the public IP address of the virtual machine.
+   - Once the virtual machine is created, note down its public IP address.
+   - On your local machine (not on the Azure portal), launch the "Remote Desktop Connection" app. (You can search for it in the Start menu on Windows.)
+   - In the Remote Desktop Connection app, enter the public IP address of your Azure virtual machine.
    - Click "Connect" to initiate the connection.
-   - You may be prompted to enter your Azure account credentials or the username and password you set up during virtual machine creation.
-   - After authentication, you will be connected to your Windows virtual machine.
+   - If prompted, enter the username and password you set during the virtual machine setup process.
+   - Wait for the connection to establish. You should now be connected to your Azure virtual machine remotely.
+
+3. **Enable Windows Features:**
+   - Once connected to your virtual machine, go to the Control Panel.
+   - Within the Control Panel, locate and open the "Programs" section.
+   - Select "Turn Windows features on or off."
+   - In the dialog box, navigate to:
+     - World Wide Web Services -> Application Development Features
+   - Check the boxes for:
+     - [X] CGI
+     - [X] Common HTTP Features
+   - Make sure all Common HTTP Features are checked.
+
+4. **Install and Enable IIS:**
+   - After enabling the necessary features, proceed to install and configure Internet Information Services (IIS).
+   - In the same "Turn Windows features on or off" dialog box, navigate to:
+     - World Wide Web Services
+   - Check the box for "Internet Information Services".
+   - Click "OK" to install IIS with the selected features.
+
+   *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
+
+5. **Install PHP Manager for IIS and Rewrite Module:**
+   - Download PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) and the Rewrite Module (rewrite_amd64_en-US.msi) from the Installation Files.
+   - Run the downloaded files and follow the installation wizard to complete the installations.
+
+6. **Create PHP Directory and Install PHP:**
+   - Create a folder named "PHP" in the C drive (C:\PHP).
+   - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
+   - Extract the contents of the downloaded zip file into the C:\PHP directory.
+
+7. **Install VC_redist.x86.exe:**
+   - Download VC_redist.x86.exe from the Installation Files.
+   - Run the downloaded file and follow the setup wizard to complete the installation.
+
+8. **Install MySQL:**
+   - Download MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the Installation Files.
+   - Run the downloaded file and follow the setup wizard:
+     - Choose Typical Setup.
+     - Launch Configuration Wizard after install.
+     - Choose Standard Configuration.
+     - Set the root password to "Password1".
+     - Execute the process.
+
+9. **Configure IIS:**
+   - Search for IIS in the Windows search bar and open it as an administrator.
+   - Click on PHP Manager and register a new PHP version.
+   - Provide the path to the php executable file (php-cgi.exe) located in C:\PHP.
+   - Restart the IIS server.
+
+10. **Install osTicket:**
+    - Download osTicket v1.15.8 from the Installation Files Folder.
+    - Extract and copy the "upload" folder to C:\inetpub\wwwroot.
+    - Rename the copied "upload" folder to "osTicket".
+    - Reload IIS.
+    - On IIS, go to sites -> Default -> osTicket.
+    - On the right, click “Browse *:80”.
+    - Some extensions might not be enabled on the osTicket browser. To enable them:
+       - Go back to IIS, sites -> Default -> osTicket.
+       - Double click PHP Manager.
+       - Click "Enable or disable an extension" and enable php_imap.dll, php_intl.dll, and php_opcache.dll.
+   
+11. **Setup osTicket:**
+    - Rename "ost-sampleconfig.php" to "ost-config.php" in C:\inetpub\wwwroot\osTicket\include.
+    - Set permissions for "ost-config.php" to "Full Control"
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
