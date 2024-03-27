@@ -33,6 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osTicket v1.15.8
 
 <h2>Installation Step-by-Step Guide</h2>
+
 1. **Create a Virtual Machine on Azure:**
    - Go to https://portal.azure.com/.
    - Sign in with your Azure account credentials.
