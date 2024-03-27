@@ -95,6 +95,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Choose Standard Configuration.
      - Set the root password to "Password1".
      - Execute the process.
+!! ATTENTION !! If this appears, choose to “Keep” the file:
 
 9. **Configure IIS:**
    - Search for IIS in the Windows search bar and open it as an administrator.
