@@ -37,7 +37,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 1. **Create a Virtual Machine on Azure:**
    - Go to https://portal.azure.com/.
    - Sign in with your Azure account credentials.
-   - Navigate to the Azure dashboard and locate the "Virtual Machines" option.
+   - Navigate to the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
    - Click on "Add" to create a new virtual machine.
    - Select "Windows 10 Pro" as the operating system.
    - Choose version 22H2.
