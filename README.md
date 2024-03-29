@@ -76,7 +76,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
 5. **Install PHP Manager for IIS and Rewrite Module:**
-   - Download [PHP Manager] (https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view) for IIS (PHPManagerForIIS_V1.5.0.msi) and the Rewrite Module (rewrite_amd64_en-US.msi) from the Installation Files.
+   - Download [PHP Manager](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view) for IIS (PHPManagerForIIS_V1.5.0.msi) and the Rewrite Module (rewrite_amd64_en-US.msi) from the Installation Files.
    - Run the downloaded files and follow the installation wizard to complete the installations.
 
 6. **Create PHP Directory and Install PHP:**
