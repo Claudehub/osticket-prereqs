@@ -22,7 +22,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Prerequisites software list</h2>
 
-- Download link: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 - Azure Virtual Machine
 - Internet Information Services (IIS)
 - PHP Manager
@@ -31,6 +30,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - MySQL
 - VC Redist
 - osTicket v1.15.8
+- Installation Files: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 <h2>Installation Step-by-Step Guide</h2>
 
