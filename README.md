@@ -37,14 +37,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 1. **Create a Resource Group**
      - Go to [portal.azure.com](https://portal.azure.com/#home) and sign in with your Azure account.
 
-     - Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
+     - Once logged in, on the left-hand side, click on the "☰", and navigate to "Resource groups" from the Azure services menu.
 
-     - Click on the "+ Add" button at the top of the Resource groups page.
+     - Click on the "+ Create" button under the label "Resource groups" at the top left of the Resource groups page.
 
-     - You'll see a form to create a new resource group. Fill in the details:
+     - You will see a form to create a new resource group. Fill in the details:
         - *Subscription*: Choose the subscription you want to use.
-        - *Resource group*: Give your resource group a name.
-        - *Region*: Choose the region where you want your resources to be located.
+        - *Resource group*: Give your resource group a name; for this guide we will name it "osTicket".
+        - *Region*: Choose the region where you want your resources to be located; for this guide we will just use "West US 3".
    
      - Double-check your details, then click on the "Review + create" button at the bottom.
    
@@ -52,7 +52,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    
      - Azure will now deploy your resource group. This might take a few moments.
    
-     - Once deployment is complete, you'll receive a notification or see a message confirming that your resource group has been created successfully.
+     - Once deployment is complete, you will receive a notification or see a message confirming that your resource group has been created successfully.
 
 2. **Create a Virtual Machine on Azure:**
    - Navigate to the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
