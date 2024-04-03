@@ -42,9 +42,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Click on the "+ Add" button at the top of the Resource groups page.
 
      - You'll see a form to create a new resource group. Fill in the details:
-      - *Subscription*: Choose the subscription you want to use.
+        - *Subscription*: Choose the subscription you want to use.
         - *Resource group*: Give your resource group a name.
-      - *Region*: Choose the region where you want your resources to be located.
+        - *Region*: Choose the region where you want your resources to be located.
    
      - Double-check your details, then click on the "Review + create" button at the bottom.
    
