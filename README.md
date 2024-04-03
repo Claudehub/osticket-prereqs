@@ -34,83 +34,108 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Step-by-Step Guide</h2>
 
-Go to portal.azure.com and sign in with your Azure account.
+1.**Create a Resource Group**
+   - Go to portal.azure.com and sign in with your Azure account.
 
-Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
+   - Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
 
-Click on the "+ Add" button at the top of the Resource groups page.
+   - Click on the "+ Add" button at the top of the Resource groups page.
 
-You'll see a form to create a new resource group. Fill in the details:
-   - **Subscription**: Choose the subscription you want to use.
-   - **Resource group**: Give your resource group a name.
-   - **Region**: Choose the region where you want your resources to be located.
-
-Double-check your details, then click on the "Review + create" button at the bottom.
-
-Review the summary, and if everything looks good, click on the "Create" button.
-
-Azure will now deploy your resource group. This might take a few moments.
-
-8. **Confirmation**: Once deployment is complete, you'll receive a notification or see a message confirming that your resource group has been created successfully.
+   - You'll see a form to create a new resource group. Fill in the details:
+    - *Subscription*: Choose the subscription you want to use.
+    - *Resource group*: Give your resource group a name.
+    - *Region*: Choose the region where you want your resources to be located.
+   
+   - Double-check your details, then click on the "Review + create" button at the bottom.
+   
+   - Review the summary, and if everything looks good, click on the "Create" button.
+   
+   - Azure will now deploy your resource group. This might take a few moments.
+   
+   - Once deployment is complete, you'll receive a notification or see a message confirming that your resource group has been created successfully.
 
 That's it! You've now created a resource group in Azure. You can use this resource group to organize and manage your Azure resources effectively.
+
 1. **Create a Virtual Machine on Azure:**
-   - Go to https://portal.azure.com/.
-   - Sign in with your Azure account credentials.
    - Navigate to the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
+
    - Click on the "Create" option prompted in the middle of the screen to create a new virtual machine.
+
    - Select the first option that says "Azure virtual machine"
+
    - Select "Windows 10 Pro" as the operating system.
+
    - Choose version 22H2.
+
    - Configure the virtual machine with the following specifications:
      - At least 2 vCPUs.
      - 16 GBs of memory (RAM).
+
    - Follow the on-screen instructions to complete the virtual machine setup.
 
-2. **Connect to the Virtual Machine:**
+3. **Connect to the Virtual Machine:**
    - Once the virtual machine is created, note down its public IP address.
+
    - On your local machine (not on the Azure portal), launch the "Remote Desktop Connection" app. (You can search for it in the Start menu on Windows.)
+
    - In the Remote Desktop Connection app, enter the public IP address of your Azure virtual machine.
+
    - Click "Connect" to initiate the connection.
+
    - If prompted, enter the username and password you set during the virtual machine setup process.
+
    - Wait for the connection to establish. You should now be connected to your Azure virtual machine remotely.
 
-3. **Enable Windows Features:**
+5. **Enable Windows Features:**
+
    - Once connected to your virtual machine, go to the Control Panel.
+
    - Within the Control Panel, locate and open the "Programs" section.
+
    - Select "Turn Windows features on or off."
+
    - In the dialog box, navigate to:
      - World Wide Web Services -> Application Development Features
+
    - Check the boxes for:
      - [X] CGI
 
      - [X] Common HTTP Features
+
    - Make sure all Common HTTP Features are checked.
 
-4. **Install and Enable IIS:**
+7. **Install and Enable IIS:**
    - After enabling the necessary features, proceed to install and configure Internet Information Services (IIS).
+
    - In the same "Turn Windows features on or off" dialog box, navigate to:
      - World Wide Web Services
+
    - Check the box for "Internet Information Services".
+
    - Click "OK" to install IIS with the selected features.
 
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
-5. **Install PHP Manager for IIS and Rewrite Module:**
+9. **Install PHP Manager for IIS and Rewrite Module:**
    - Download PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) and the Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
+
    - Run the downloaded files and follow the installation wizard to complete the installations.
 
-6. **Create PHP Directory and Install PHP:**
+11. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
+   
    - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
+   
    - Extract the contents of the downloaded zip file into the C:\PHP directory.
 
-7. **Install VC_redist.x86.exe:**
+11. **Install VC_redist.x86.exe:**
    - Download VC_redist.x86.exe from the Installation Files.
+   
    - Run the downloaded file and follow the setup wizard to complete the installation.
 
-8. **Install MySQL:**
+11. **Install MySQL:**
    - Download MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the Installation Files.
+   
    - Run the downloaded file and follow the setup wizard:
      - Choose Typical Setup.
      - Launch Configuration Wizard after install.
@@ -119,26 +144,36 @@ That's it! You've now created a resource group in Azure. You can use this resour
      - Execute the process.
 !! ATTENTION !! If this appears, choose to “Keep” the file:
 
-9. **Configure IIS:**
+11. **Configure IIS:**
    - Search for IIS in the Windows search bar and open it as an administrator.
+   
    - Click on PHP Manager and register a new PHP version.
+   
    - Provide the path to the php executable file (php-cgi.exe) located in C:\PHP.
+   
    - Restart the IIS server.
 
-10. **Install osTicket:**
+11. **Install osTicket:**
     - Download osTicket v1.15.8 from the Installation Files Folder.
+
     - Extract and copy the "upload" folder to C:\inetpub\wwwroot.
+
     - Rename the copied "upload" folder to "osTicket".
+
     - Reload IIS.
+
     - On IIS, go to sites -> Default -> osTicket.
+
     - On the right, click “Browse *:80”.
+
     - Some extensions might not be enabled on the osTicket browser. To enable them:
        - Go back to IIS, sites -> Default -> osTicket.
        - Double click PHP Manager.
        - Click "Enable or disable an extension" and enable php_imap.dll, php_intl.dll, and php_opcache.dll.
    
-11. **Setup osTicket:**
+13. **Setup osTicket:**
     - Rename "ost-sampleconfig.php" to "ost-config.php" in C:\inetpub\wwwroot\osTicket\include.
+
     - Set permissions for "ost-config.php" to "Full Control"
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
