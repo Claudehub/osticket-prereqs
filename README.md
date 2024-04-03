@@ -34,23 +34,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Step-by-Step Guide</h2>
 
-1.**Create a Resource Group**
-   - Go to portal.azure.com and sign in with your Azure account.
+1. **Create a Resource Group**
+     - Go to portal.azure.com and sign in with your Azure account.
 
-   - Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
+     - Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
 
-   - Click on the "+ Add" button at the top of the Resource groups page.
+     - Click on the "+ Add" button at the top of the Resource groups page.
 
-   - You'll see a form to create a new resource group. Fill in the details:
-    - *Subscription*: Choose the subscription you want to use.
-    - *Resource group*: Give your resource group a name.
-    - *Region*: Choose the region where you want your resources to be located.
+     - You'll see a form to create a new resource group. Fill in the details:
+      - *Subscription*: Choose the subscription you want to use.
+      - *Resource group*: Give your resource group a name.
+      - *Region*: Choose the region where you want your resources to be located.
    
-   - Double-check your details, then click on the "Review + create" button at the bottom.
+     - Double-check your details, then click on the "Review + create" button at the bottom.
    
-   - Review the summary, and if everything looks good, click on the "Create" button.
+     - Review the summary, and if everything looks good, click on the "Create" button.
    
-   - Azure will now deploy your resource group. This might take a few moments.
+     - Azure will now deploy your resource group. This might take a few moments.
    
      - Once deployment is complete, you'll receive a notification or see a message confirming that your resource group has been created successfully.
 
