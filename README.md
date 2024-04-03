@@ -34,11 +34,32 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Step-by-Step Guide</h2>
 
+Go to portal.azure.com and sign in with your Azure account.
+
+Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
+
+Click on the "+ Add" button at the top of the Resource groups page.
+
+You'll see a form to create a new resource group. Fill in the details:
+   - **Subscription**: Choose the subscription you want to use.
+   - **Resource group**: Give your resource group a name.
+   - **Region**: Choose the region where you want your resources to be located.
+
+Double-check your details, then click on the "Review + create" button at the bottom.
+
+Review the summary, and if everything looks good, click on the "Create" button.
+
+Azure will now deploy your resource group. This might take a few moments.
+
+8. **Confirmation**: Once deployment is complete, you'll receive a notification or see a message confirming that your resource group has been created successfully.
+
+That's it! You've now created a resource group in Azure. You can use this resource group to organize and manage your Azure resources effectively.
 1. **Create a Virtual Machine on Azure:**
    - Go to https://portal.azure.com/.
    - Sign in with your Azure account credentials.
    - Navigate to the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
-   - Click on "Add" to create a new virtual machine.
+   - Click on the "Create" option prompted in the middle of the screen to create a new virtual machine.
+   - Select the first option that says "Azure virtual machine"
    - Select "Windows 10 Pro" as the operating system.
    - Choose version 22H2.
    - Configure the virtual machine with the following specifications:
