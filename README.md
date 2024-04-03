@@ -35,7 +35,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Step-by-Step Guide</h2>
 
 1. **Create a Resource Group**
-     - Go to portal.azure.com and sign in with your Azure account.
+     - Go to [portal.azure.com](https://portal.azure.com/#home) and sign in with your Azure account.
 
      - Once logged in, on the left-hand side, click on "Resource groups" from the Azure services menu.
 
