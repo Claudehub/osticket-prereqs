@@ -55,7 +55,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Once deployment is complete, you will receive a notification or see a message confirming that your resource group has been created successfully.
 
 2. **Create a Virtual Machine on Azure:**
-   - Navigate to the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
+   - Navigate the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
 
    - Click on the "Create" option prompted in the middle of the screen to create a new virtual machine.
 
