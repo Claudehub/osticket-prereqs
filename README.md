@@ -37,10 +37,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
      - Click on the "+ Create" button under the label "Resource groups" at the top left of the Resource groups page.
 
-     - You will see a form to create a new resource group. Fill in the details:
-        - *Subscription*: Choose the subscription you want to use.
+     - You will see a form to create a new resource group. Fill in the following details:
+        - *Subscription*: Choose the subscription you want to use; for this guide we will use "Azure Subscription 1".
         - *Resource group*: Give your resource group a name; for this guide we will name it "osTicket".
-        - *Region*: Choose the region where you want your resources to be located; for this guide we will just use "West US 3".
+        - *Region*: Choose the region where you want your resources to be located; for this guide we will use "West US 3".
    
      - Double-check your details, then click on the "Review + create" button at the bottom.
    
@@ -51,23 +51,36 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Once deployment is complete, you will receive a notification or see a message confirming that your resource group has been created successfully.
 
 2. **Create a Virtual Machine on Azure:**
-   - Navigate the Azure dashboard and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
-
+   - Navigate the Azure interface and locate the "Virtual Machines" option by pressing the "☰" on the left hand side of the screen.
+     
    - Click on the "Create" option prompted in the middle of the screen to create a new virtual machine.
 
    - Select the first option that says "Azure virtual machine"
+   -
+   - You will see a form to create a new resource group. Fill in the following details:
 
-   - Select "Windows 10 Pro" as the operating system.
+     **Project details:**
+        - *Subscription*: Select the subcription that is already created for us "Azure Subscription 1".
+        - *Resource group*: Select our previously created resource group "osTicket".
+     **Instance details** 
+        - *Virtual machine name*: Type whatever name you want in here; for this guide we will call the Virtual Machine "VM1".
+        - *Region*: Select the same region from the previously created resource group "West US 3".
+        - *Availability options*: Under "Availability options" select "No infrastructure redundancy required"
+        - *Image*: Under "image" select "Windows 10 Pro Version 22H2 - x64 Gen2"
+        - *Size*:
+    **Administrator Account:**
+        - *Username*:
+        - *Password*:
+        - *Confirm password*:
 
-   - Choose version 22H2.
+    **Inbound port rules**:
+        - *Public inbound ports*:
+        - *Select inbound ports*:
 
-   - Configure the virtual machine with the following specifications:
-     - At least 2 vCPUs.
-     - 16 GBs of memory (RAM).
+    **Licensing**
+        - *License*: Under liscensing press on the check box to confirm lisence hosting rights
 
-   - Follow the on-screen instructions to complete the virtual machine setup.
-
-3. **Connect to the Virtual Machine:**
+4. **Connect to the Virtual Machine:**
    - Once the virtual machine is created, note down its public IP address.
 
    - On your local machine (not on the Azure portal), launch the "Remote Desktop Connection" app. (You can search for it in the Start menu on Windows.)
@@ -80,7 +93,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Wait for the connection to establish. You should now be connected to your Azure virtual machine remotely.
 
-4. **Enable Windows Features:**
+5. **Enable Windows Features:**
 
    - Once connected to your virtual machine, go to the Control Panel.
 
@@ -98,7 +111,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Make sure all Common HTTP Features are checked.
 
-5. **Install and Enable IIS:**
+6. **Install and Enable IIS:**
    - After enabling the necessary features, proceed to install and configure Internet Information Services (IIS).
 
    - In the same "Turn Windows features on or off" dialog box, navigate to:
@@ -110,24 +123,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
-6. **Install PHP Manager for IIS and Rewrite Module:**
+7. **Install PHP Manager for IIS and Rewrite Module:**
    - Download PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) and the Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
 
    - Run the downloaded files and follow the installation wizard to complete the installations.
 
-7. **Create PHP Directory and Install PHP:**
+8. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
    
    - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
    
    - Extract the contents of the downloaded zip file into the C:\PHP directory.
 
-8. **Install VC_redist.x86.exe:**
+9. **Install VC_redist.x86.exe:**
    - Download VC_redist.x86.exe from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard to complete the installation.
 
-9. **Install MySQL:**
+10. **Install MySQL:**
    - Download MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard:
@@ -138,7 +151,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Execute the process.
 !! ATTENTION !! If this appears, choose to “Keep” the file:
 
-10. **Configure IIS:**
+11. **Configure IIS:**
    - Search for IIS in the Windows search bar and open it as an administrator.
    
    - Click on PHP Manager and register a new PHP version.
