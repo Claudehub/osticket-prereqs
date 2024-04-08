@@ -56,29 +56,31 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - Click on the "Create" option prompted in the middle of the screen to create a new virtual machine.
 
    - Select the first option that says "Azure virtual machine"
-   -
+   
    - You will see a form to create a new resource group. Fill in the following details:
 
-     **Project details:**
+     **Project details**
         - *Subscription*: Select the subcription that is already created for us "Azure Subscription 1".
         - *Resource group*: Select our previously created resource group "osTicket".
+     
      **Instance details** 
         - *Virtual machine name*: Type whatever name you want in here; for this guide we will call the Virtual Machine "VM1".
         - *Region*: Select the same region from the previously created resource group "West US 3".
         - *Availability options*: Under "Availability options" select "No infrastructure redundancy required"
         - *Image*: Under "image" select "Windows 10 Pro Version 22H2 - x64 Gen2"
-        - *Size*:
-    **Administrator Account:**
-        - *Username*:
-        - *Password*:
-        - *Confirm password*:
+        - *Size*: Uder size select atleast 2cpus, 16 GB of memory.
 
-    **Inbound port rules**:
-        - *Public inbound ports*:
-        - *Select inbound ports*:
+     **Administrator Account**
+        - *Username*: Create a username; for this guide we will call it "localhost"
+        - *Password*: Create a password; for this guide we use "Password1" as our password.
+        - *Confirm password*: Re-enter the password you previously created.
 
-    **Licensing**
-        - *License*: Under liscensing press on the check box to confirm lisence hosting rights
+     **Inbound port rules**
+        - *Public inbound ports*: Select "Allow selected ports" if this option is not already selected for you.
+        - *Select inbound ports*: Select "RDP (3389)" if this option is not already selected for you.
+
+     **Licensing**
+        - *License*: Under liscensing press on the check box to confirm lisence hosting rights.
 
 4. **Connect to the Virtual Machine:**
    - Once the virtual machine is created, note down its public IP address.
