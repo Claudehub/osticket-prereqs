@@ -35,14 +35,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
      - Once logged in, on the left-hand side, click on the "☰", and navigate to "Resource groups" from the Azure services menu.
 
-     - Click on the "+ Create" button under the label "Resource groups" at the top left of the Resource groups page.
+     - Click on the "+ Create" at the top left of the Resource groups page.
 
-     - You will see a form to create a new resource group. Fill in the following details:
+     - We will see a form to create a new resource group. Fill in the following details:
         - *Subscription*: Choose the subscription you want to use; for this guide we will use "Azure Subscription 1".
         - *Resource group*: Give your resource group a name; for this guide we will name it "osTicket".
         - *Region*: Choose the region where you want your resources to be located; for this guide we will use "West US 3".
    
-     - Double-check your details, then click on the "Review + create" button at the bottom.
+     - Double-check your details, then click on the "Review + create" button at the bottom screen.
    
      - Review the summary, and if everything looks good, click on the "Create" button.
    
@@ -57,7 +57,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Select the first option that says "Azure virtual machine"
    
-   - You will see a form to create a new resource group. Fill in the following details:
+   - You will see a form to create a virtual machine. Fill in the following details:
 
      **Project details**
         - *Subscription*: Select the subcription that is already created for us "Azure Subscription 1".
@@ -72,27 +72,29 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
      **Administrator account**
         - *Username*: Create a username; for this guide we will call it "localhost"
-        - *Password*: Create a password; for this guide we use "Password1" as our password.
+        - *Password*: Create a password; for this guide we use "Password12345" as our password.
         - *Confirm password*: Re-enter the password you previously created.
-
-     **Inbound port rules**
-        - *Public inbound ports*: Select "Allow selected ports" if this option is not already selected for you.
-        - *Select inbound ports*: Select "RDP (3389)" if this option is not already selected for you.
 
      **Licensing**
         - *License*: Under liscensing press on the check box to confirm lisence hosting rights, and then at the bottom of the screen click on the "Next:" button until you reach the 
                "Networking" tab.
-    ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/79da3ac4-8d5e-4002-a6ff-94765c2b3117)
+![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/79da3ac4-8d5e-4002-a6ff-94765c2b3117)
+
      **Networking interface**
        
-       - *Virtual network:* A virual network should already be provided for us based off of what we called our virtual machine, it should say "(new) VM1-vnet".
-       - *subnet:* A subnet mask should be already provided for us, it should say "(new) default (10.0.0.0/24)".
-       - *Public IP:* A public ip should also be provided for us, it should say "(new) VM1-ip". Once we have confirmed that our public ip is created we will click on "Review + Create", and 
-          create our virtual machine.
+      - *Virtual network:* A virual network should already be provided for us based off of what we called our virtual machine, it should say "(new) VM1-vnet".
+      - *Subnet:* A subnet mask should already be provided for us, it should say "(new) default (10.0.0.0/24)".
+      - *Public IP:* A public ip should also be provided for us, it should say "(new) VM1-ip". Once we have confirmed that our public ip is created we will click on "Review + Create", and
+          click on the "create" option at the bottom of the screen to create our virtual machine.
 
 
 4. **Connect to the Virtual Machine:**
-   - Once the virtual machine is created, note down its public IP address.
+   - Once the virtual machine is created go to back to the Azure home page and access the virtual machine by clicking on "VM1" option under our resources.
+     ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/e5d4d184-e453-4d30-ada1-a8694b937b9c)
+
+   - After accesing the virtual machine, note down its public IP address.
+     ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/356daf23-df81-4f4d-916c-d7e6669bc28c)
+
 
    - On your local machine (not on the Azure portal), launch the "Remote Desktop Connection" app. (You can search for it in the Start menu on Windows.)
 
