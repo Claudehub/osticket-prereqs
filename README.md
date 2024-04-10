@@ -70,7 +70,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
         - *Image*: Under "image" select "Windows 10 Pro Version 22H2 - x64 Gen2"
         - *Size*: Uder size select atleast 2cpus, 16 GB of memory.
 
-     **Administrator Account**
+     **Administrator account**
         - *Username*: Create a username; for this guide we will call it "localhost"
         - *Password*: Create a password; for this guide we use "Password1" as our password.
         - *Confirm password*: Re-enter the password you previously created.
@@ -80,7 +80,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
         - *Select inbound ports*: Select "RDP (3389)" if this option is not already selected for you.
 
      **Licensing**
-        - *License*: Under liscensing press on the check box to confirm lisence hosting rights.
+        - *License*: Under liscensing press on the check box to confirm lisence hosting rights, and then at the bottom of the screen click on the "Next:" button until you reach the 
+               "Networking" tab.
+    ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/79da3ac4-8d5e-4002-a6ff-94765c2b3117)
+     **Networking interface**
+       
+       - *Virtual network:* A virual network should already be provided for us based off of what we called our virtual machine, it should say "(new) VM1-vnet".
+       - *subnet:* A subnet mask should be already provided for us, it should say "(new) default (10.0.0.0/24)".
+       - *Public IP:* A public ip should also be provided for us, it should say "(new) VM1-ip". Once we have confirmed that our public ip is created we will click on "Review + Create", and 
+          create our virtual machine.
+
 
 4. **Connect to the Virtual Machine:**
    - Once the virtual machine is created, note down its public IP address.
