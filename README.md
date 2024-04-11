@@ -89,7 +89,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 4. **Connect to the Virtual Machine:**
-   - Once the virtual machine is created go to back to the Azure home page and access the virtual machine by clicking on "VM1" option under our resources.
+   - Once the virtual machine is created go back to the Azure home page by pressing on the blue "Home" button located at the top left of the screen.
+   ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/5b4aa4f8-beb0-499d-b1cc-712fa4df4363)
+
+   - Access the virtual machine by clicking on "VM1" option under our resources.
      ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/e5d4d184-e453-4d30-ada1-a8694b937b9c)
 
    - After accesing the virtual machine, note down its public IP address.
@@ -101,12 +104,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - In the Remote Desktop Connection app, enter the public IP address of your Azure virtual machine.
 
    - Click "Connect" to initiate the connection.
+  
+   - Once the connection is established press on "More choices"
+   ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/7975dc97-f3c7-45c8-93b8-bb5274129fb1)
 
-   - If prompted, enter the username and password you set during the virtual machine setup process.
+   - Once prompted, click on "Use a different account", and enter the "User name" and "Password" you set during the virtual machine setup process.
 
    - Wait for the connection to establish. You should now be connected to your Azure virtual machine remotely.
 
-5. **Enable Windows Features:**
+6. **Enable Windows Features:**
 
    - Once connected to your virtual machine, go to the Control Panel.
 
@@ -124,7 +130,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Make sure all Common HTTP Features are checked.
 
-6. **Install and Enable IIS:**
+7. **Install and Enable IIS:**
    - After enabling the necessary features, proceed to install and configure Internet Information Services (IIS).
 
    - In the same "Turn Windows features on or off" dialog box, navigate to:
@@ -136,24 +142,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
-7. **Install PHP Manager for IIS and Rewrite Module:**
+8. **Install PHP Manager for IIS and Rewrite Module:**
    - Download PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) and the Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
 
    - Run the downloaded files and follow the installation wizard to complete the installations.
 
-8. **Create PHP Directory and Install PHP:**
+9. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
    
    - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
    
    - Extract the contents of the downloaded zip file into the C:\PHP directory.
 
-9. **Install VC_redist.x86.exe:**
+10. **Install VC_redist.x86.exe:**
    - Download VC_redist.x86.exe from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard to complete the installation.
 
-10. **Install MySQL:**
+11. **Install MySQL:**
    - Download MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard:
