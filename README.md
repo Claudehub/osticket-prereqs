@@ -98,7 +98,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - After accesing the virtual machine, note down its public IP address.
      ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/356daf23-df81-4f4d-916c-d7e6669bc28c)
 
-
    - On your local machine (not on the Azure portal), launch the "Remote Desktop Connection" app. (You can search for it in the Start menu on Windows.)
 
    - In the Remote Desktop Connection app, enter the public IP address of your Azure virtual machine.
@@ -110,11 +109,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Once prompted, click on "Use a different account", and enter the "User name" and "Password" you set during the virtual machine setup process.
 
+![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/725467f0-4596-4b1e-a0ad-1e22f245becf)
+
+   - Upon initiating the connection, a prompt will appear that will ask if you still wish to proceed with the connection, press "Yes".
+     ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/05ee5183-21c7-4aa3-b210-cbc5a71c2fac)
+
    - Wait for the connection to establish. You should now be connected to your Azure virtual machine remotely.
 
 6. **Enable Windows Features:**
 
-   - Once connected to your virtual machine, go to the Control Panel.
+   - Once you connect to your virtual machine, you will get a prompt that will allow you to adjust yout privacy settings. We will not need to any of these settings so turn them all off.
+   
+   - Once you are logged in, go to the Control Panel.
 
    - Within the Control Panel, locate and open the "Programs" section.
 
