@@ -118,7 +118,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. **Enable Windows Features:**
 
-   - Once you connect to your virtual machine, you will get a prompt that will allow you to adjust yout privacy settings. We will not need to any of these settings so turn them all off.
+   - Once you connect to your virtual machine, you will get a prompt that will allow you to adjust yout privacy settings. We will not need to any of these settings for this guide, so turn them all off.
    
    - Once you are logged in, go to the Control Panel.
 
