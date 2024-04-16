@@ -68,7 +68,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
         - *Region*: Select the same region from the previously created resource group "West US 3".
         - *Availability options*: Under "Availability options" select "No infrastructure redundancy required"
         - *Image*: Under "image" select "Windows 10 Pro Version 22H2 - x64 Gen2"
-        - *Size*: Uder "Size" select atleast 2cpus, 16 GB of memory.
+        - *Size*: Uder "Size" select atleast 2vcpus, 16 GB of memory.
 
      **Administrator account**
         - *Username*: Create a username; for this guide we will call it "localhost"
