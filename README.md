@@ -89,7 +89,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 3. **Connect to the Virtual Machine:**
-   - Once the virtual machine is created go back to the Azure home page by pressing on the blue "Home" button located at the top left of the screen.
+   - Once the virtual machine is complete for deployment go back to the Azure home page by pressing on the blue "Home" button located at the top left of the screen.
    ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/5b4aa4f8-beb0-499d-b1cc-712fa4df4363)
 
    - Access the virtual machine by clicking on "VM1" option under our resources.
