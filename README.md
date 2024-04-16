@@ -104,7 +104,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    - Click "Connect" to initiate the connection.
   
-   - Once the connection is established press on "More choices"
+   - Once the connection is established you will see a tab that prompts you to enter credentials press on "More choices"
    ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/7975dc97-f3c7-45c8-93b8-bb5274129fb1)
 
    - Once prompted, click on "Use a different account", and enter the "User name" and "Password" you set during the virtual machine setup process.
