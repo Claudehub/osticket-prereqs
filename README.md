@@ -127,6 +127,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - After connecting to your virtual machine, a prompt will appear to adjust privacy settings. Since these settings are not required for this guide, just disable all of them.
    
    - After logging into the virtual machine, access the Control Panel by using the search function at the bottom-left corner of the screen.
+   
    ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/0182f3bc-a0dc-435b-a3bd-3fbeb3a2396d)
     
    - Within the Control Panel, you will see multiple adjustable computer settings. Locate and open the "Programs" settings.
