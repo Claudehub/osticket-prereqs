@@ -60,8 +60,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - You will see a form to create a virtual machine. Fill in the following details:
 
      **Project details**
-        - *Subscription*: Select the subcription that is already created for us "Azure Subscription 1".
-        - *Resource group*: Select our previously created resource group "osTicket".
+        - *Subscription*: Select the subcription that is already created, "Azure Subscription 1".
+        - *Resource group*: Select the previously created resource group "osTicket".
      
      **Instance details** 
         - *Virtual machine name*: Type whatever name you want in here; for this guide we will call the Virtual Machine "VM1".
@@ -124,7 +124,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. **Enable Windows Features:**
 
-   - After connecting to your virtual machine, a prompt will appear to adjust privacy settings. Since these settings are not required for this guide, just disable all of them.
+   - After connecting to your virtual machine, a prompt will appear to adjust privacy settings. Since these settings are not required for this guide, just disable all of them, and then click "Accept".
    
    - After logging into the virtual machine, access the Control Panel by using the search function at the bottom-left corner of the screen.
    
@@ -132,20 +132,21 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
    - Within the Control Panel, you will see multiple adjustable computer settings. Locate and open the "Programs" settings.
 ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/9913912d-cbc4-464c-bd08-b983854f8912)
-   - Once you have access, select "Turn Windows features on or off" under "Programs and Features".
+   - Once you have access, under "Programs and Features" select "Turn Windows features on or off", and you will be presented with a dialog box.
 ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/c15b56d4-21b9-498b-b26e-e5a77f2c864b)
 
-   - In the dialog box, navigate to:
-     - World Wide Web Services -> Application Development Features
+   - In the dialog box, navigate to "Internet Information Services", and then click on the "+" symbol to view "World Wide Web Services":
 
-   - Check the boxes for:
-     - [X] CGI
+     ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/73e99ed9-28c1-4f32-ae26-50f4cc56ebf4)
 
-     - [X] Common HTTP Features
+   - Once "World Wide Web Services" appears click on the "+" symbol to view "Application and Development Features".
 
-   - Make sure all Common HTTP Features are checked.
+   - Once again click on the "+" symbol to view more features under "Application and Development Features", and check the box for "CGI"
+  
+   - Once "CGI" is checked scroll down a bit until you see "Common HTTP Features" and check the box for that one aswell.
+     ![image](https://github.com/Claudehub/osticket-prereqs/assets/159544351/d0b4e012-0d3b-4975-b045-dc050b7b3496)
 
-5. **Install and Enable IIS:**
+6. **Install and Enable IIS:**
    - After enabling the necessary features, proceed to install and configure Internet Information Services (IIS).
 
    - In the same "Turn Windows features on or off" dialog box, navigate to:
@@ -157,24 +158,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
-6. **Install PHP Manager for IIS and Rewrite Module:**
+7. **Install PHP Manager for IIS and Rewrite Module:**
    - Download PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) and the Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
 
    - Run the downloaded files and follow the installation wizard to complete the installations.
 
-7. **Create PHP Directory and Install PHP:**
+8. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
    
    - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
    
    - Extract the contents of the downloaded zip file into the C:\PHP directory.
 
-8. **Install VC_redist.x86.exe:**
+9. **Install VC_redist.x86.exe:**
    - Download VC_redist.x86.exe from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard to complete the installation.
 
-9. **Install MySQL:**
+10. **Install MySQL:**
    - Download MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the Installation Files.
    
    - Run the downloaded file and follow the setup wizard:
@@ -185,7 +186,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
      - Execute the process.
 !! ATTENTION !! If this appears, choose to “Keep” the file:
 
-10. **Configure IIS:**
+11. **Configure IIS:**
    - Search for IIS in the Windows search bar and open it as an administrator.
    
    - Click on PHP Manager and register a new PHP version.
