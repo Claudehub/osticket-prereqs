@@ -154,9 +154,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    *Note: You can verify the installation of IIS by opening a web browser on the virtual machine and navigating to "127.0.0.1". You should see a default web page if IIS is installed and running correctly.* 
 
 8. **Install PHP Manager for IIS and Rewrite Module:**
-   - Download PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) and the Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
-
-   - Run the downloaded files and follow the installation wizard to complete the installations.
+   - Download and install PHP Manager for IIS ([PHPManagerForIIS_V1.5.0.msi](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) and follow the installation wizard to complete the installation.
+   - Download and install Rewrite Module ([rewrite_amd64_en-US.msi](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view)) and follow the installation wizard to complete the installation.
 
 9. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
