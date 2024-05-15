@@ -160,7 +160,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 7. **Create PHP Directory and Install PHP:**
    - Create a folder named "PHP" in the C drive (C:\PHP).
    
-   - Download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) from the Installation Files.
+   - Download PHP 7.3.8 ([php-7.3.88-nts-Win32-VC15-x866.zip](https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view)) from the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
    
    - Extract the contents of the downloaded zip file into the C:\PHP directory.
 
